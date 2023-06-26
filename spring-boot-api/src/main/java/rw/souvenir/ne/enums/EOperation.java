@@ -1,2 +1,5 @@
-package rw.souvenir.ne.enums;public enum EOperation {
+package rw.souvenir.ne.enums;
+
+public enum EOperation {
+    IN,OUT
 }

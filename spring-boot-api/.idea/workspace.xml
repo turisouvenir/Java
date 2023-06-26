@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b17b9cc0-eddf-4a64-8f59-b3c3841486be" name="Changes" comment="" />
+    <list default="true" id="b17b9cc0-eddf-4a64-8f59-b3c3841486be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/controllers/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/controllers/PurchasedController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/controllers/QuantityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/enums/EOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/repositories/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/repositories/PurchasedRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/repositories/QuantityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/controllers/BlogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/controllers/StudentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/models/Blog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/models/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/repositories/BlogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/repositories/StudentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/services/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/controllers/BlogController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/controllers/StudentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/models/Blog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/models/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/repositories/BlogRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/repositories/StudentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/services/StudentService.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,13 +39,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -41,21 +68,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
-    "show.run.dashboard.notification": "false",
-    "spring.configuration.checksum": "f3f09df0a4c93d65808fe934ad274ec3"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;show.run.dashboard.notification&quot;: &quot;false&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;f3f09df0a4c93d65808fe934ad274ec3&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Spring Boot.Application (1)">
     <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-boot-api" />
@@ -94,6 +121,7 @@
       <workItem from="1687711693796" duration="8546000" />
       <workItem from="1687763313469" duration="928000" />
       <workItem from="1687766485964" duration="409000" />
+      <workItem from="1687767360124" duration="10456000" />
     </task>
     <servers />
   </component>
