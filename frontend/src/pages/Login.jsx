@@ -5,15 +5,14 @@ import '../assets/scss/login.scss'
 import toast from 'react-hot-toast';
 import AppServices from "../services";
 
-import { NavLink, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 function Login() {
   const [username, SetUsername] = useState('')
   const [submitted, setSubmitted] = useState(false)
   const [password, SetPassword] = useState('')
-  const [admin, setAdmin] = useState({})
-  const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('auth_token') !== null )
+  const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('auth_token') !== null)
 
   const navigate = useNavigate();
 
@@ -38,12 +37,12 @@ function Login() {
     setSubmitted(true);
 
     toast.promise(
-      AppServices.login({ username, password }),
+      AppServices.login({ email:username, password }),
       {
         loading: 'Logging in ...',
         success: (response) => {
-          if (response.data.token) {
-            localStorage.setItem("auth_token", JSON.stringify(`Bearer ${response.data.token}`));
+          if (response.data.success) {
+            localStorage.setItem("auth_token", JSON.stringify(`Bearer ${response.data.data.accessToken}`));
           }
           navigate('/');
           setSubmitted(false);
@@ -62,7 +61,7 @@ function Login() {
       }
     );
   }
-  
+
 
   return (
     <div className="bg-primary h-screen flex justify-center">
@@ -80,6 +79,10 @@ function Login() {
           </div>
           <div className="input-container  mb-8">
             <input className='submit bg-primary text-main cursor-pointer rounded-md' type="submit" value="submit" />
+          </div>
+
+          <div>
+            Don't have an account? <Link className="text-underline" to="/signup">Signup</Link>
           </div>
         </form>
       </div>

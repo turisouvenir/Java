@@ -5,31 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b17b9cc0-eddf-4a64-8f59-b3c3841486be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/controllers/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/controllers/PurchasedController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/controllers/QuantityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/enums/EOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/repositories/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/repositories/PurchasedRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/repositories/QuantityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/controllers/BlogController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/controllers/StudentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/models/Blog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/models/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/repositories/BlogRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/repositories/StudentRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/services/StudentService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/controllers/BlogController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/controllers/StudentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/models/Blog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/models/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/repositories/BlogRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/repositories/StudentRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/services/StudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/services/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +100,7 @@
       <workItem from="1687711693796" duration="8546000" />
       <workItem from="1687763313469" duration="928000" />
       <workItem from="1687766485964" duration="409000" />
-      <workItem from="1687767360124" duration="10456000" />
+      <workItem from="1687767360124" duration="11103000" />
     </task>
     <servers />
   </component>

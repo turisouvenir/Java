@@ -61,7 +61,6 @@ const DashboardLayout = ({ children }) => {
     <>
       <div className='nav-bar bg-primary'>
         <div className="flex justify-end ml-auto place-items-center">
-
           <div
             onClick={toggleSidebar}
             className="toggle-sidebar lg:hidden cursor-pointer flex place-items-center justify-center"
