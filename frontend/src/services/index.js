@@ -23,18 +23,20 @@ class AppServices {
         })
     }
 
-    getEmployeeLaptopData() {
-        return axios.get(`${API_URL}/employeeLaptops`);
-    }
-   
+
 
 }
 
 
-const getAuthToken = async () => {
+export const getAuthToken = async () => {
     const auth_token = localStorage.getItem('auth_token');
-    console.log(auth_token);
     return auth_token ? JSON.parse(auth_token) : null;
 }
+
+export const config = {
+    headers: {
+      Authorization: await getAuthToken(),
+    },
+};
 
 export default new AppServices();

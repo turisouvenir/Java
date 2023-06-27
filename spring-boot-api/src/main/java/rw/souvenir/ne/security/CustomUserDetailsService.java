@@ -22,7 +22,7 @@ public class CustomUserDetailsService implements UserDetailsService {
     }
 
     @Transactional
-    public UserDetails loadByUserId(UUID id) {
+    public UserDetails loadByUserId(Long id) {
         User user = this.userRepository.findById(id).orElseThrow(() -> new UsernameNotFoundException("User not found with id: " + id));
         return UserPrincipal.create(user);
     }

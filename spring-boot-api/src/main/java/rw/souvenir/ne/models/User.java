@@ -24,11 +24,9 @@ import java.util.UUID;
 @Table(name = "users", uniqueConstraints = {@UniqueConstraint(columnNames = {"email"}), @UniqueConstraint(columnNames = {"phone_number"})})
 @OnDelete(action = OnDeleteAction.CASCADE)
 public class User {
-    @GeneratedValue(generator = "uuid2")
-    @GenericGenerator(name = "uuid2", strategy = "uuid2")
-    @Column(columnDefinition = "BINARY(16)")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    private UUID id;
+    private Long id;
 
     @Column(name = "first_name")
     private String firstName;

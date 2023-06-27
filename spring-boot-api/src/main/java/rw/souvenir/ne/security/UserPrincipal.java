@@ -19,7 +19,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class UserPrincipal implements UserDetails {
 
-    private UUID id;
+    private Long id;
 
     private String firstName;
 

@@ -11,8 +11,8 @@ public class Quantity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "product_code")
-    private String productCode;
+    @Column(name = "product_id")
+    private Long productId;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "operation")
@@ -21,15 +21,15 @@ public class Quantity {
     private LocalDate date;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "product_code", insertable = false, updatable = false, referencedColumnName = "code")
+    @JoinColumn(name = "product_id", insertable = false, updatable = false, referencedColumnName = "id")
     private Product product;
 
     public Quantity() {
 
     }
 
-    public Quantity(String productCode, EOperation operation, int quantity, LocalDate date) {
-        this.productCode = productCode;
+    public Quantity(Long productId, EOperation operation, int quantity, LocalDate date) {
+        this.productId = productId;
         this.operation = operation;
         this.quantity = quantity;
         this.date = date;
@@ -39,7 +39,7 @@ public class Quantity {
     public String toString() {
         return "Quantity{" +
                 "id=" + id +
-                ", productCode='" + productCode + '\'' +
+                ", productId='" + productId + '\'' +
                 ", operation=" + operation +
                 ", quantity=" + quantity +
                 ", date=" + date +
@@ -54,12 +54,12 @@ public class Quantity {
         this.id = id;
     }
 
-    public String getProductCode() {
-        return productCode;
+    public Long getProductId() {
+        return productId;
     }
 
-    public void setProductCode(String productCode) {
-        this.productCode = productCode;
+    public void setProductId(Long productId) {
+        this.productId = productId;
     }
 
     public EOperation getOperation() {

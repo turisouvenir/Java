@@ -5,10 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b17b9cc0-eddf-4a64-8f59-b3c3841486be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/controllers/ReportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/dtos/PurchaseReportDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/models/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/models/CartItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/services/CartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/services/ReportService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Layout/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/Layout/Dashboard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/main.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/Dashboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/services/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/controllers/PurchasedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/controllers/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/models/Purchased.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/models/Purchased.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/models/Quantity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/models/Quantity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/repositories/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/repositories/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/security/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/security/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/security/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/security/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/security/UserPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/security/UserPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/controllers/PurchasedController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/security/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/security/CustomUserDetailsService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +37,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -49,6 +67,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Notification.DoNotAsk-null&quot;: &quot;true&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -57,9 +76,14 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Documents/Souvenir/Java/spring-boot-api&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
-    &quot;show.run.dashboard.notification&quot;: &quot;false&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;f3f09df0a4c93d65808fe934ad274ec3&quot;
+    &quot;spring.configuration.checksum&quot;: &quot;f3f09df0a4c93d65808fe934ad274ec3&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RunManager" selected="Spring Boot.Application (1)">
@@ -101,6 +125,8 @@
       <workItem from="1687763313469" duration="928000" />
       <workItem from="1687766485964" duration="409000" />
       <workItem from="1687767360124" duration="11103000" />
+      <workItem from="1687810676420" duration="1267000" />
+      <workItem from="1687812382209" duration="12821000" />
     </task>
     <servers />
   </component>

@@ -3,7 +3,7 @@ import { useEffect, useState, useRef } from 'react'
 import logo from '../assets/images/logo.png'
 import '../assets/scss/login.scss'
 import toast from 'react-hot-toast';
-import AppServices from "../services";
+import AppServices, { getAuthToken } from "../services";
 
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -12,15 +12,15 @@ function Login() {
   const [username, SetUsername] = useState('')
   const [submitted, setSubmitted] = useState(false)
   const [password, SetPassword] = useState('')
-  const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('auth_token') !== null)
+  const [isLoggedIn, setIsLoggedIn] = useState(getAuthToken !== null)
 
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (isLoggedIn) {
-      navigate('/');
-    }
-  }, [isLoggedIn])
+  // useEffect(() => {
+  //   if (isLoggedIn) {
+  //     navigate('/');
+  //   }
+  // }, [isLoggedIn])
 
   const onChangeUsername = (e) => {
     SetUsername(e.target.value);
@@ -37,14 +37,14 @@ function Login() {
     setSubmitted(true);
 
     toast.promise(
-      AppServices.login({ email:username, password }),
+      AppServices.login({ email: username, password }),
       {
         loading: 'Logging in ...',
         success: (response) => {
           if (response.data.success) {
             localStorage.setItem("auth_token", JSON.stringify(`Bearer ${response.data.data.accessToken}`));
           }
-          navigate('/');
+          navigate('/dashboard');
           setSubmitted(false);
           return "Logged in successfully";
         },

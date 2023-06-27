@@ -15,6 +15,8 @@ import Dashboard from './pages/Dashboard';
 import NotFound from './pages/404';
 import DashboardLayout from './components/Layout/Dashboard';
 import Signup from './pages/Signup';
+import Report from './pages/Report';
+import ShoppingCart from './pages/ShoppingCart';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -22,7 +24,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Provider store={store}>
         <Router>
           <Routes>
-            <Route path="/" element={<Dashboard />} />
+            <Route path="/dashboard" element={<DashboardLayout children={<Dashboard />} />} />
+            <Route path="/shopping-cart" element={<DashboardLayout children={<ShoppingCart />} />} />
+            <Route path="/report" element={<DashboardLayout children={<Report />} />} />
             <Route path="login" element={<Login />} />
             <Route path="signup" element={<Signup />} />
           </Routes>

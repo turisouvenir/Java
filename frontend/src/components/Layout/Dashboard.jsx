@@ -12,7 +12,7 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 import Modal from '../Modal';
 import toast from 'react-hot-toast';
-import AppServices from "../../services";
+import AppServices, { getAuthToken } from "../../services";
 
 
 const DashboardLayout = ({ children }) => {
@@ -28,7 +28,7 @@ const DashboardLayout = ({ children }) => {
   const [sidebarStatus, setSidebarStatus] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const [admin, setAdmin] = useState({});
-  const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('auth_token') !== null)
+  // const [isLoggedIn] = useState(getAuthToken !== null)
   const toggleMenu = () => {
     setMenuStatus(!menuStatus);
   }
@@ -42,11 +42,11 @@ const DashboardLayout = ({ children }) => {
     navigate('/login');
   }
 
-  useEffect(() => {
-    if (!isLoggedIn) {
-      navigate('/login');
-    }
-  }, [isLoggedIn])
+  // useEffect(() => {
+  //   if (!isLoggedIn) {
+  //     navigate('/login');
+  //   }
+  // }, [isLoggedIn])
 
 
 
@@ -88,44 +88,11 @@ const DashboardLayout = ({ children }) => {
                 fill="#28A4E2"
               />
             </svg>}
-
           </div>
         </div>
       </div>
       <div className="flex">
-        <div className={`full-height sidebar ${sidebarStatus ? 'absolute' : 'hidden'} md:block`}>
-          <div id="logo" className="flex justify-center">
-            <img
-              alt="Logo"
-              src={logo}
-            />
-          </div>
-          <ul className="list-reset text-left flex flex-col h-4/6">
-            <li
-              className="dropdown"
-              id="dropdown"
-            >
-              <NavLink
-                className={`link-item colored-link ${useLocation().pathname === '/' ? 'active' : ''}`}
-                to="/"
-              >
-                <img
-                  src={useLocation().pathname === '/' ? activeHome : home}
-                  alt=""
-                />
-                <span className="menu-link">
-                  Home
-                </span>
-              </NavLink>
-            </li>
-          </ul>
-          <div
-            className="flex relative"
-          >
-            <button className='absolute bg-primary w-full rounded h-[40px] text-main' onClick={handleLogout}>Logout</button>
-          </div>
-        </div>
-        <div className=' full-height w-full bg-customBg'>{children}</div>
+        <div className='full-height w-full bg-customBg'>{children}</div>
       </div>
     </>
   )
