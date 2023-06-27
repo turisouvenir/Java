@@ -24,7 +24,7 @@ function Table() {
         <div>
             <div className="flex justify-between items-center">
                 <p className="text-gray-500 text-sm font-semibold">
-                    Report
+                    All Purchases Report
                 </p>
             </div>
             <div className="overflow-x-auto max-w-full md:mx-auto mt-2">
