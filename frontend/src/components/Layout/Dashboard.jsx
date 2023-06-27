@@ -60,36 +60,6 @@ const DashboardLayout = ({ children }) => {
   return (
     <>
       <div className='nav-bar bg-primary'>
-        <div className="flex justify-end ml-auto place-items-center">
-          <div
-            onClick={toggleSidebar}
-            className="toggle-sidebar lg:hidden cursor-pointer flex place-items-center justify-center"
-          >
-            {sidebarStatus ? <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M21 18V20H3V18H21ZM6.596 3.90399L8.01 5.31799L4.828 8.49999L8.01 11.682L6.596 13.096L2 8.49999L6.596 3.90399ZM21 11V13H12V11H21ZM21 3.99999V5.99999H12V3.99999H21Z"
-                fill="#28A4E2"
-              />
-            </svg> : <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M21 18V20H3V18H21ZM17.404 3.90399L22 8.49999L17.404 13.096L15.99 11.682L19.172 8.49999L15.99 5.31799L17.404 3.90399ZM12 11V13H3V11H12ZM12 3.99999V5.99999H3V3.99999H12Z"
-                fill="#28A4E2"
-              />
-            </svg>}
-          </div>
-        </div>
       </div>
       <div className="flex">
         <div className='full-height w-full bg-customBg'>{children}</div>

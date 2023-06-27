@@ -19,7 +19,7 @@ function Navbar() {
     };
     useEffect(() => {
         getCurrentUser();
-    });
+    },[]);
     //handle logout
     const handleLogout = () => {
         localStorage.removeItem('auth_token');

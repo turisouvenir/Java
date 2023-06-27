@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { API_URL, config } from '../services';
 import { ToastContainer, toast } from 'react-toastify';
@@ -11,7 +11,7 @@ const Products = () => {
 
   useEffect(() => {
     fetchData();
-  });
+  }, []);
 
   // Fetch data from the API
   const fetchData = async () => {
@@ -60,13 +60,13 @@ const Products = () => {
 
     // Call API to add the items to the cart
     axios
-      .post(`${API_URL}/cart/add/${product.id}/${quantity}`,{}, config)
+      .post(`${API_URL}/cart/add/${product.id}/${quantity}`, {}, config)
       .then((response) => {
         console.log(response.data, 'response');
         toast.success('Items added to cart successfully!');
       })
       .catch((error) => {
-        toast.error( error?.response?.data?.message || 'Failed to add items to cart.');
+        toast.error(error?.response?.data?.message || 'Failed to add items to cart.');
         console.log('catch err', error);
       });
   };

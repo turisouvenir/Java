@@ -46,9 +46,6 @@ const ShoppingCart = () => {
       }
     };
 
-    if (cartItems.length > 0) {
-      fetchItemDetails();
-    }
   }, [cartItems]);
 
   // Function to handle checkout and display the purchased table
@@ -67,8 +64,17 @@ const ShoppingCart = () => {
 
   // Function to handle removing an item from the cart
   const removeFromCart = (item) => {
-    const updatedCartItems = cartItems.filter((i) => i.id !== item.id);
-    setCartItems(updatedCartItems);
+    axios
+      .post(`${API_URL}/cart/remove/${item.productId}`, {}, config)
+      .then((response) => {
+        toast.success('Item removed successfully!');
+        // Update cart items without fetching the entire cart again
+        setCartItems((prevCartItems) => prevCartItems.filter((cartItem) => cartItem.id !== item.id));
+      })
+      .catch((error) => {
+        toast.error('Failed to remove item.');
+        console.log('catch errr', error);
+      });
   };
 
   return (
@@ -77,7 +83,7 @@ const ShoppingCart = () => {
       <ToastContainer />
       <div className='mt-12 w-[90%] mx-auto'>
         <h2 className="text-xl font-bold text-gray-800">Shopping Cart</h2>
-        <div>
+        {cartItems.length > 0 ? <><div>
           {cartItems.map((item) => (
             <div key={item.id} className="flex items-center mt-4 shadow-md">
               <div className="flex items-center justify-between w-full bg-white rounded-lg p-4">
@@ -99,14 +105,17 @@ const ShoppingCart = () => {
             </div>
           ))}
         </div>
-        {cartItems.length > 0 && (
-          <button
-            className="bg-primary text-main text-sm px-4 py-2 rounded-full mt-4"
-            onClick={checkout}
-          >
-            Checkout
-          </button>
-        )}
+          {cartItems.length > 0 && (
+            <button
+              className="bg-primary text-main text-sm px-4 py-2 rounded-full mt-4"
+              onClick={checkout}
+            >
+              Checkout
+            </button>
+          )}
+        </> :
+          <div className='h-[50vh] flex justify-center items-center'>No items Added to Cart Yet</div>
+        }
       </div>
     </div>
   );

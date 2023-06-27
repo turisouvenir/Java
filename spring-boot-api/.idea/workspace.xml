@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b17b9cc0-eddf-4a64-8f59-b3c3841486be" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/controllers/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/controllers/CartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/models/Quantity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/models/Quantity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/services/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/souvenir/ne/services/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/controllers/CartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/controllers/CartController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/services/CartService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rw/souvenir/ne/services/CartService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Layout/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/Layout/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/Products.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +107,7 @@
       <workItem from="1687766485964" duration="409000" />
       <workItem from="1687767360124" duration="11103000" />
       <workItem from="1687810676420" duration="1267000" />
-      <workItem from="1687812382209" duration="15798000" />
+      <workItem from="1687812382209" duration="16641000" />
     </task>
     <servers />
   </component>
