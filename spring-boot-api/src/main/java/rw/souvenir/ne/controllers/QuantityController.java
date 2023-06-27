@@ -44,7 +44,6 @@ public class QuantityController {
     @PostMapping("/quantities")
     public ResponseEntity<ApiResponse> createNewOperation(@RequestBody Quantity quantity) {
         try {
-            System.out.println(quantity);
             Quantity newQuantity = quantityRepository.save(quantity);
             return ResponseEntity.status(HttpStatus.CREATED)
                     .body(ApiResponse.success(newQuantity));
