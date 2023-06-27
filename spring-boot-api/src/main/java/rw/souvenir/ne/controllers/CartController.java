@@ -1,7 +1,9 @@
 package rw.souvenir.ne.controllers;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import rw.souvenir.ne.models.Cart;
+import rw.souvenir.ne.payload.ApiResponse;
 import rw.souvenir.ne.services.CartService;
 
 @RestController
@@ -12,8 +14,13 @@ public class CartController {
         this.cartService = cartService;
     }
     @PostMapping("/add/{productId}/{quantity}")
-    public void addItemToCart(@PathVariable Long productId, @PathVariable int quantity) {
-        cartService.addItemToCart(productId, quantity);
+    public ResponseEntity<ApiResponse> addItemToCart(@PathVariable Long productId, @PathVariable int quantity) {
+        ApiResponse response = cartService.addItemToCart(productId, quantity);
+        if (response.getSuccess()) {
+            return ResponseEntity.ok(response);
+        } else {
+            return ResponseEntity.badRequest().body(response);
+        }
     }
     @GetMapping
     public Cart getCart() {

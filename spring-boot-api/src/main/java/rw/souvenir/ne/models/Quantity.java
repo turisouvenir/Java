@@ -3,6 +3,7 @@ import rw.souvenir.ne.enums.EOperation;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.Date;
 
 @Entity
 @Table(name = "quantities")
@@ -18,7 +19,7 @@ public class Quantity {
     @Column(name = "operation")
     private EOperation operation;
     private int quantity;
-    private LocalDate date;
+    private Date date;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id", insertable = false, updatable = false, referencedColumnName = "id")
@@ -28,7 +29,7 @@ public class Quantity {
 
     }
 
-    public Quantity(Long productId, EOperation operation, int quantity, LocalDate date) {
+    public Quantity(Long productId, EOperation operation, int quantity, Date date) {
         this.productId = productId;
         this.operation = operation;
         this.quantity = quantity;
@@ -78,11 +79,11 @@ public class Quantity {
         this.quantity = quantity;
     }
 
-    public LocalDate getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
