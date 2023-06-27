@@ -68,7 +68,6 @@ const Products = () => {
       .catch((error) => {
         toast.error( error?.response?.data?.message || 'Failed to add items to cart.');
         console.log('catch err', error);
-        console.log(config,"my conf")
       });
   };
 
